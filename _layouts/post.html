@@ -1,0 +1,20 @@
+---
+layout: defualt
+header: category1
+---
+
+
+<div class="container container-fluid" style="word-wrap:break-word;">
+	<div class="row">
+		<div class="col-xs-9">
+			<h1>{{page.title}}</h1>
+			<hr>
+			{{content}}	
+		</div>
+		<div class="col-xs-3 hidden-xs hidden-sm" id="post_sidebar">
+			{% include side_bar.html %}
+		</div>
+		
+		
+	</div>
+</div>

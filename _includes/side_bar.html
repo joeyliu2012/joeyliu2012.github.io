@@ -1,0 +1,23 @@
+{%  assign total = page.keywords.size | minus:1 %}
+
+{% if total > 0 %}
+
+<ul class="nav" date-spy="affix" data-offset-top=332 style="top:30px">
+	{% for i in (0..total) %}
+		<!-- li>a -->
+		<li><a href="{{page.anchor[i]}}" style="font-size:20px;">{{page.keywords[i]}}</a></li>
+
+		{% endfor %}
+	
+
+</ul>
+
+<script>
+	$('body').scrollspy({
+		target:'#post_sidebar',
+		offset: 40		
+
+	})
+</script>
+
+{% endif %}

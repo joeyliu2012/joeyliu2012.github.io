@@ -1,5 +1,5 @@
 .website_header {
-	background-image: url(../image/sea.jpg);
+	background-image: url(/image/sea.jpg);
 	height: 600px;
 	width: 100%;
 	background-size: 100% 100%;
@@ -7,11 +7,22 @@
 }
 
 .link1_header {
-	background-image: url(../image/sea.jpg);
+	background-image: url(/image/sea.jpg);
 	height: 250px;
 	width: 100%;
 	background-size: 100% 100%;
 	color: white;
+}
+
+.link1_header img {
+	height: 150px;
+
+}
+
+.list_post_box {
+	border: 2px solid purple;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .navbar-default {

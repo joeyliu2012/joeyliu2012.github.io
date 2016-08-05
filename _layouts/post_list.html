@@ -1,0 +1,29 @@
+---
+layout: default
+header: main
+
+---
+
+{% for post in site.categories.olympics %}
+
+<div class="container container-fluid" style="margin-top:3px;margin-bottom:30px">
+	<div class="row">
+		<div class="col-xs-9 list_post_box">
+			<div class="col-xs-3">
+				<img src="/image/{{post.header_image}}" alt="" class="img-rounded img-responsive">
+			</div>		<!-- END img -->
+			<div class="col-xs-9 abstract">
+				<div class="col-xs-8">
+					<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+				</div>
+				<div class="col-xs-4">
+					<h4 style="text-align:right";>{{post.date| date_to_string}}</h4>
+				</div>
+				<hr style="width:100%;color:black;height:2px;background-color:black;">
+
+			</div>		<!-- END abstract -->
+		</div>
+	</div>
+</div>
+
+{% endfor %}
